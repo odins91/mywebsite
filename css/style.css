@@ -7,13 +7,43 @@ body{
 	margin:0;
 }
 
+a{
+	text-decoration: none;
+	color:coral;
+}
+a:hover{
+	color: blue;
+}
+
+
+.button{
+	background-color: brown;
+	color: #fff;
+	padding: 10px 15px;
+	border: none;
+}
+
+.button:hover{
+	background: red;
+	color:#fff;
+}
+
+.fly-button{
+	position: fixed;
+	top:700px;
+}
 
 .container{
 	width:80%;
 	margin:auto;
 	overflow: hidden;
 
+
 }
+
+.clr{
+	clear:both;
+} 
 
 #main-header{
 	background-color: coral;
@@ -50,34 +80,78 @@ body{
 #showcase{
 	background-image:url('../images/showcase.jpg');
 	background-position: center right;
-	min-height:300px;
-	margin-bottom:30px;
+	min-height:200px;
+	margin-bottom:20px;
 	text-align: center;
 }
 
 #showcase h1{
-	color: #fff;
+	color: #333;
 	font-size: 50px;
-	line-height: 1.4em;
-	padding-top:30px;
+	line-height: 1.2em;
+	padding-top:10px;
 
 }
 
 #main{
 	float:left;
-	width:70%;
+	width:60%;
 	padding: 0 30px;
 	box-sizing: border-box;
 }
 
+#main img{
+	width: 60%;
+	margin: auto;
+	display: block;
+
+}
+
+#main a{
+	float: left;	
+}
+
 #sidebar{
 	float:right;
-	width:30%;
+	width:40%;
 	padding: 10px;
 	background: #333;
-	color:#f333;
+	color:#fff;
 	box-sizing:border-box;
 }
+#sidebar li{
+	color: orange;
+	font-size: 13px;
+}
+
+
+.next-reviews{
+	border: 1px #ccc solid;
+	padding: 20px;
+	border-radius: 15px;
+	margin-top: 20px;
+	margin:50px;
+	box-sizing: border-box;
+
+}
+
+.next-reviews h2{
+	text-align: center;
+}
+
+
+.attachment{
+	width:960px;
+	height: 600px;
+	border:3px solid #000;
+	margin-top: 30px;
+	margin-left:100px;
+	margin-right: 100px;	
+	background-image: url('../images/photo3.jpg');
+	position: relative;
+
+}
+
 
 #main-footer{
 	background: #333;
@@ -87,13 +161,3 @@ body{
 	margin-top:20px;
 }
 
-@media(max-width:600px){
-	#main{
-		width:100%;
-		float:none;
-	}
-	#sidebar{
-		width:100%;
-		float:none;
-	}
-}
